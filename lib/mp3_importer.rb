@@ -1,11 +1,9 @@
 class MP3Importer
-  attr_reader :path
-  
+  attr_accessor :path
   def initialize(path)
-    self.path = path 
-  end 
-  
- def files
+    self.path = path
+  end
+  def files
     path = self.path + "/*.mp3"
     processed = Dir[path].collect do |path_and_name|
       path_and_name.split("/").last
@@ -17,6 +15,7 @@ class MP3Importer
       Song.create_from_filename(filename)
     end
   end
-
+end 
+  
 
 end 
