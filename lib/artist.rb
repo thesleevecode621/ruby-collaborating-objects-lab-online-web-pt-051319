@@ -3,6 +3,10 @@ class Artist
   
   @@all = []
   
+   def self.find_or_create_by_name(name)
+    self.find_by_name || self.create_by_name
+  end 
+  
   def initialize(name)
     @songs = []
     @name = name 
@@ -18,7 +22,7 @@ class Artist
   def self.all 
     @@all
   end 
- 
+ def sel
   
 end 
     
