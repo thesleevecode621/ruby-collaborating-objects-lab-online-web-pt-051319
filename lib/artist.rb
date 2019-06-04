@@ -3,4 +3,5 @@ class Artist
   
   @@all 
   
-  def init
+  def initialize
+    
