@@ -7,6 +7,14 @@ class Artist
     self.find_by_name || self.create_by_name
   end 
   
+   def self.find_by_name(name)
+   @@all.detect {|n|n.name = name} 
+ end 
+ 
+  def self.create_by_name(name)
+    Artist.new(name)
+end 
+
   def initialize(name)
     @songs = []
     @name = name 
