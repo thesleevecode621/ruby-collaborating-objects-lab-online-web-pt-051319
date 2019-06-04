@@ -23,7 +23,7 @@ class Artist
     @@all
   end 
  def self.find_by_name(name)
-   @@all.dete
+   @@all.detect {|n|n = n 
  end 
   
 end 
