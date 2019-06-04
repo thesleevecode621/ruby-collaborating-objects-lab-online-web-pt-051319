@@ -19,7 +19,6 @@ class Artist
     @@all
   end 
   def find_or_create_by_name(name)
-    (name)
     song = Song.new(name)
     self.songs << song
     song.artist = self
