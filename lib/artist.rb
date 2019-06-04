@@ -18,6 +18,6 @@ class Artist
   def self.all 
     @@all
   end 
-  def find
+  def find_or_create_by_name(name)
 end 
     
