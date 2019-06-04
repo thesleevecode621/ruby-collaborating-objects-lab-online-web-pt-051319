@@ -22,11 +22,6 @@ class Artist
   def self.all 
     @@all
   end 
- def self.find_by_name(name)
-   @@all.detect {|n|n.name = name} 
- end 
-  def self.create_by_name(name)
-    Artist.new(name)
-end 
+
 
 end     
