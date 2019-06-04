@@ -26,7 +26,7 @@ class Artist
    @@all.detect {|n|n.name = name} 
  end 
   def self.create_by_name(name)
-    artist.new(name)
+    Artist.new(name)
 end 
 
 end     
