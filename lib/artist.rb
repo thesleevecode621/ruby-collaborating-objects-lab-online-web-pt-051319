@@ -21,8 +21,9 @@ end
     self.save
   end 
   def print_songs
-    self.songs.each do 
-      puts 
+    self.songs.each do |song|
+      puts song.name 
+    end 
   def save 
     @@all << self 
   end 
