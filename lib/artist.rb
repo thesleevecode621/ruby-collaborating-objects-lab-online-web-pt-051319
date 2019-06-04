@@ -20,7 +20,7 @@ end
     @name = name 
     self.save
   end 
-  
+  def 
   def save 
     @@all << self 
   end 
