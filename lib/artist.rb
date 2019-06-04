@@ -8,7 +8,7 @@ class Artist
   end 
   
    def self.find_by_name(name)
-   self.all.detect {|n|n.name = name} 
+   self.all.detect {|n|n.name == name} 
  end 
  
   def self.create_by_name(name)
