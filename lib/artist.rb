@@ -20,7 +20,9 @@ end
     @name = name 
     self.save
   end 
-  def 
+  def print_songs
+    self.songs.each do 
+      puts 
   def save 
     @@all << self 
   end 
