@@ -22,7 +22,8 @@ class Artist
   def self.all 
     @@all
   end 
- def self.find_by_name
+ def self.find_by_name(name)
+   @@all.dete
  end 
   
 end 
