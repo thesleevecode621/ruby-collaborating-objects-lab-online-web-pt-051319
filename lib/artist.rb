@@ -25,6 +25,6 @@ class Artist
  def self.find_by_name(name)
    @@all.detect {|n|n.name = name} 
  end 
-  
+  def 
 end 
     
